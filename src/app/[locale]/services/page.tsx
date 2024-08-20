@@ -16,9 +16,7 @@ export async function generateMetadata({params}: { params: IParams }): Promise<M
     metadataBase: new URL(`https://vanguard-group.com/${params.locale}/services`),
     robots: "index, follow",
     alternates: {
-      canonical: params.locale === 'en'
-        ? "https://vanguard-group.com/services"
-        : `https://vanguard-group.com/${params.locale}/services`,
+      canonical: `https://vanguard-group.com/${params.locale}/services`,
       languages: {
         en: "https://vanguard-group.com/services",
         ru: "https://vanguard-group.com/ru/services",
@@ -28,9 +26,7 @@ export async function generateMetadata({params}: { params: IParams }): Promise<M
     openGraph: {
       title: t('seo.title'),
       description: t('seo.description'),
-      url: params.locale === 'en'
-        ? "https://vanguard-group.com/services"
-        : `https://vanguard-group.com/${params.locale}/services`,
+      url: `https://vanguard-group.com/${params.locale}/services`,
       type: "website",
       siteName: "Vanguard",
       images: [
@@ -38,7 +34,6 @@ export async function generateMetadata({params}: { params: IParams }): Promise<M
           url: logoShortImg.src,
           width: 1200,
           height: 630,
-          type: 'image/png',
           alt: "About Vanguard",
         },
       ],
@@ -54,7 +49,6 @@ export async function generateMetadata({params}: { params: IParams }): Promise<M
           url: logoShortImg.src,
           width: 1200,
           height: 630,
-          type: 'image/png',
           alt: "About Vanguard",
         },
       ],
