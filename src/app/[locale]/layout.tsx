@@ -25,7 +25,6 @@ export const metadata: Metadata = {
       {
         url: logoShortImg.src,
         width: 1200,
-        type: "image/jpeg",
         height: 630,
         alt: "Vanguard Mining Equipment",
       },
@@ -39,7 +38,6 @@ export const metadata: Metadata = {
       {
         url: logoShortImg.src,
         width: 1200,
-        type: "image/jpeg",
         height: 630,
         alt: "Vanguard Mining Equipment",
       },
@@ -78,6 +76,7 @@ export default function RootLayout({children, params: {locale}}: Readonly<IRootL
 
   return (
     <html lang={locale}>
+
     <body className={saira.className}>
     <NextIntlClientProvider locale={locale} messages={messages}>
       <Providers locale={locale}>
