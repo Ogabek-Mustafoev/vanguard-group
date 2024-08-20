@@ -12,7 +12,7 @@ import aboutTwoImg from '@/assets/img/about-two.jpg';
 import contactImg from '@/assets/img/contact.jpg';
 import heroImg from '@/assets/img/hero-img.jpg';
 import logoIconImg from '@/assets/img/logo-icon.png';
-import logoShortImg from '@/assets/img/logo-short.png';
+import logoShortImg from '@/assets/img/logo-short.jpg';
 import logoImg from '@/assets/img/logo.png';
 import partnerEightImg from '@/assets/img/partner-eight.png';
 import partnerFiveImg from "@/assets/img/partner-five.png";

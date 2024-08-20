@@ -1,5 +1,5 @@
-import { logoImg, logoShortImg } from "@/constants";
-import { MetadataRoute } from "next";
+import {logoImg, logoShortImg} from "@/constants";
+import {MetadataRoute} from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -13,7 +13,6 @@ export default function manifest(): MetadataRoute.Manifest {
       {
         src: logoShortImg.src,
         sizes: "192x192",
-        type: "image/svg+xml",
       },
       {
         src: logoImg.src,
