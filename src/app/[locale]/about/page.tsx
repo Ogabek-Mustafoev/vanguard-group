@@ -1,6 +1,5 @@
 "use server"
 
-import {logoShortImg} from "@/constants";
 import {IParams} from "@/types";
 import {AboutPage} from "@/views";
 import {Metadata} from "next";
@@ -14,7 +13,6 @@ export async function generateMetadata({params}: { params: IParams }): Promise<M
     keywords: t('seo.keywords'),
     description: t('seo.description'),
     metadataBase: new URL(`https://vanguard-group.com/${params.locale}/about`),
-    robots: "index, follow",
     alternates: {
       canonical: `https://vanguard-group.com/${params.locale}/about`,
       languages: {
@@ -22,36 +20,6 @@ export async function generateMetadata({params}: { params: IParams }): Promise<M
         ru: "https://vanguard-group.com/ru/about",
         uz: "https://vanguard-group.com/uz/about",
       }
-    },
-    openGraph: {
-      title: t('seo.title'),
-      description: t('seo.description'),
-      url: `https://vanguard-group.com/${params.locale}/about`,
-      type: "website",
-      siteName: "Vanguard",
-      images: [
-        {
-          url: logoShortImg.src,
-          width: 1200,
-          height: 630,
-          alt: "About Vanguard",
-        },
-      ],
-    },
-    twitter: {
-      title: t('seo.title'),
-      description: t('seo.description'),
-      card: "summary_large_image",
-      site: "@vanguard-group",
-      creator: "@vanguard-group",
-      images: [
-        {
-          url: logoShortImg.src,
-          width: 1200,
-          height: 630,
-          alt: "About Vanguard",
-        },
-      ],
     },
   };
 }

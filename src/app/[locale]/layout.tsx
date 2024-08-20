@@ -25,6 +25,7 @@ export const metadata: Metadata = {
       {
         url: logoShortImg.src,
         width: 1200,
+        type: "image/jpeg",
         height: 630,
         alt: "Vanguard Mining Equipment",
       },
@@ -38,6 +39,7 @@ export const metadata: Metadata = {
       {
         url: logoShortImg.src,
         width: 1200,
+        type: "image/jpeg",
         height: 630,
         alt: "Vanguard Mining Equipment",
       },
@@ -49,8 +51,8 @@ export const metadata: Metadata = {
   ],
   icons: [
     {
-      url: logoIconImg.src,
-      type: "image/png",
+      url: logoShortImg.src,
+      type: "image/jpeg",
       sizes: "1200x630",
     },
     {
