@@ -1,14 +1,14 @@
-import { BaseLayout } from "@/components";
-import { logoIconImg, logoShortImg } from "@/constants";
-import { Providers } from "@/providers";
-import { IChildren, IParams } from "@/types";
-import { Metadata } from "next";
-import { NextIntlClientProvider, useMessages } from "next-intl";
-import { Saira_Condensed } from 'next/font/google';
+import {BaseLayout} from "@/components";
+import {logoIconImg, logoShortImg} from "@/constants";
+import {Providers} from "@/providers";
+import {IChildren, IParams} from "@/types";
+import {Metadata} from "next";
+import {NextIntlClientProvider, useMessages} from "next-intl";
+import {Saira_Condensed} from 'next/font/google';
 
 import '@/styles/global.scss';
 
-const saira = Saira_Condensed({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });
+const saira = Saira_Condensed({subsets: ['latin'], weight: ['300', '400', '500', '600', '700']});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vanguard-group.com'),
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
     ],
   },
   authors: [
-    { name: "Ogabek Mustafoev", url: "https://mustafoev-ogabek.vercel.app/" },
-    { name: "VANGUARD-TECH-GROUP", url: "https://vanguar-group.com" },
+    {name: "Ogabek Mustafoev", url: "https://mustafoev-ogabek.vercel.app/"},
+    {name: "VANGUARD-TECH-GROUP", url: "https://vanguar-group.com"},
   ],
   icons: [
     {
@@ -66,29 +66,25 @@ export const metadata: Metadata = {
       sizes: "16x16",
     },
   ],
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-  },
+  robots: "index, follow"
 };
 
 interface IRootLayout extends IChildren {
   params: IParams;
 }
 
-export default function RootLayout({ children, params: { locale } }: Readonly<IRootLayout>) {
+export default function RootLayout({children, params: {locale}}: Readonly<IRootLayout>) {
   const messages = useMessages();
 
   return (
     <html lang={locale}>
-      <body className={saira.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Providers locale={locale}>
-            <BaseLayout>{children}</BaseLayout>
-          </Providers>
-        </NextIntlClientProvider>
-      </body>
+    <body className={saira.className}>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Providers locale={locale}>
+        <BaseLayout>{children}</BaseLayout>
+      </Providers>
+    </NextIntlClientProvider>
+    </body>
     </html>
   );
 }

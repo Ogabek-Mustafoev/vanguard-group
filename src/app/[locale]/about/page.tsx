@@ -14,11 +14,7 @@ export async function generateMetadata({params}: { params: IParams }): Promise<M
     keywords: t('seo.keywords'),
     description: t('seo.description'),
     metadataBase: new URL(`https://vanguard-group.com/${params.locale}/about`),
-    robots: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-    },
+    robots: "index, follow",
     alternates: {
       canonical: params.locale === 'en'
         ? "https://vanguard-group.com/about"
