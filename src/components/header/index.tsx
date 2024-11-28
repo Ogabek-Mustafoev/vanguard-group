@@ -65,7 +65,7 @@ export const Header: FC = () => {
         initial="initial"
         animate={isFixed ? "animate" : "initial"}
         transition={{duration: 0.6, ease: "easeInOut"}}
-        className="fixed py-2.5 md:py-3 rounded-b-3xl text-xl overflow-hidden top-0 text-white left-0 w-full z-10 bg-secondary"
+        className="fixed py-2.5 md:py-3 rounded-b-3xl text-xl overflow-hidden top-0 text-white left-0 w-full z-50 backdrop-blur bg-gradient-to-b from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.1)]"
       >
         <div className="flex items-center justify-between container">
           <MotionEl className="h-9 md:h-11 w-max cursor-pointer" direction="left" delay={.2}>

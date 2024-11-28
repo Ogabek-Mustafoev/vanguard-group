@@ -8,7 +8,7 @@ export const AboutPage: FC = () => {
   const t = useTranslations("about");
 
   return (
-    <section className="page flex flex-col gap-5">
+    <section className="page flex pt-16 flex-col gap-5">
       {aboutUsData.map(({image, html, title}, idx) => (
         <BannerContent
           key={title}

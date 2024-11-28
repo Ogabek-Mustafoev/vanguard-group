@@ -11,7 +11,7 @@ export const ServicesPage: FC = () => {
   const t = useTranslations("services");
 
   return (
-    <section className="page container">
+    <section className="page pt-16 container">
       <h2 className="heading mt-5 mb-8">{t("title")}</h2>
       <div className="grid-3 pb-6">
         {servicesData.map((item, idx) => (

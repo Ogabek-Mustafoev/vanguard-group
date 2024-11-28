@@ -7,7 +7,7 @@ export const ProjectsPage: FC = () => {
   const t = useTranslations('projects');
 
   return (
-    <section className="page container overflow-hidden">
+    <section className="page pt-16 container overflow-hidden">
       <h2 className="heading mt-5 mb-8">{t('title')}</h2>
       <Gallery images={projects}/>
     </section>
