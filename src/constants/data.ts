@@ -23,6 +23,7 @@ import {
   projectFourImg,
   projectFourteenImg,
   projectNineImg,
+  projectNineteenImg,
   projectOneImg,
   projectSevenImg,
   projectSevenTeenImg,
@@ -32,6 +33,8 @@ import {
   projectThirteenImg,
   projectThreeImg,
   projectTwelveImg,
+  projectTwentyImg,
+  projectTwentyOneImg,
   projectTwoImg,
   serviceEightImg,
   serviceFiveImg,
@@ -160,12 +163,15 @@ export const projects: StaticImageData[] = [
   projectEightImg,
   projectElevenImg,
   projectTwelveImg,
+  projectTwentyImg,
   projectFifTeenImg,
   projectSixTeenImg,
   projectThirteenImg,
   projectFourteenImg,
+  projectNineteenImg,
   projectSevenTeenImg,
   projectEightTeenImg,
+  projectTwentyOneImg,
 ];
 
 export const partners: StaticImageData[] = [

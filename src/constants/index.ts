@@ -22,24 +22,27 @@ import partnerSevenImg from '@/assets/img/partner-seven.png';
 import partnerSixImg from '@/assets/img/partner-six.png';
 import partnerThreeImg from '@/assets/img/partner-three.png';
 import partnerTwoImg from '@/assets/img/partner-two.png';
-import projectEightImg from '@/assets/img/project-eight.png';
-import projectEightTeenImg from '@/assets/img/project-eighteen.png';
-import projectElevenImg from '@/assets/img/project-eleven.png';
-import projectFifTeenImg from '@/assets/img/project-fifteen.png';
-import projectFiveImg from '@/assets/img/project-five.png';
-import projectFourImg from '@/assets/img/project-four.png';
-import projectFourteenImg from '@/assets/img/project-fourten.png';
-import projectNineImg from "@/assets/img/project-nine.png";
-import projectOneImg from '@/assets/img/project-one.png';
-import projectSevenImg from '@/assets/img/project-seven.png';
-import projectSevenTeenImg from "@/assets/img/project-seventeen.png";
-import projectSixImg from "@/assets/img/project-six.png";
-import projectSixTeenImg from '@/assets/img/project-sixteen.png';
-import projectTenImg from '@/assets/img/project-teen.png';
-import projectThirteenImg from "@/assets/img/project-thirteen.png";
-import projectThreeImg from '@/assets/img/project-three.png';
-import projectTwelveImg from '@/assets/img/project-twelve.png';
-import projectTwoImg from "@/assets/img/project-two.png";
+import projectEightImg from '@/assets/img/project-eight.jpg';
+import projectEightTeenImg from '@/assets/img/project-eighteen.jpg';
+import projectElevenImg from '@/assets/img/project-eleven.jpg';
+import projectFifTeenImg from '@/assets/img/project-fifteen.jpg';
+import projectFiveImg from '@/assets/img/project-five.jpg';
+import projectFourImg from '@/assets/img/project-four.jpg';
+import projectFourteenImg from '@/assets/img/project-fourten.jpg';
+import projectNineImg from "@/assets/img/project-nine.jpg";
+import projectOneImg from '@/assets/img/project-one.jpg';
+import projectSevenImg from '@/assets/img/project-seven.jpg';
+import projectSevenTeenImg from "@/assets/img/project-seventeen.jpg";
+import projectSixImg from "@/assets/img/project-six.jpg";
+import projectSixTeenImg from '@/assets/img/project-sixteen.jpg';
+import projectTenImg from '@/assets/img/project-teen.jpg';
+import projectThirteenImg from "@/assets/img/project-thirteen.jpg";
+import projectThreeImg from '@/assets/img/project-three.jpg';
+import projectTwelveImg from '@/assets/img/project-twelve.jpg';
+import projectNineteenImg from '@/assets/img/project-nineteen.jpg';
+import projectTwentyImg from '@/assets/img/project-twenty.jpg';
+import projectTwentyOneImg from '@/assets/img/project-twenty-one.jpg';
+import projectTwoImg from "@/assets/img/project-two.jpg";
 import serviceEightImg from '@/assets/img/service-eight.jpg';
 import serviceFiveImg from '@/assets/img/service-five.jpg';
 import serviceFourImg from '@/assets/img/service-four.jpg';
@@ -96,12 +99,15 @@ export {
   projectEightImg,
   projectElevenImg,
   projectTwelveImg,
+  projectTwentyImg,
   projectFifTeenImg,
   projectSixTeenImg,
   projectThirteenImg,
   projectFourteenImg,
+  projectNineteenImg,
   projectSevenTeenImg,
   projectEightTeenImg,
+  projectTwentyOneImg,
 }
 
 export {
